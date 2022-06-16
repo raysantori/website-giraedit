@@ -1,0 +1,60 @@
+/*botões***************************************/
+button{
+    font-size: var(--tamTexto);
+    padding: 10px 16px;
+    margin: 0 16px 0 0;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: var(--oito01);
+}
+
+button i{
+    padding: 0 8px 0 0;
+}
+
+button.btnPrim{
+    background-color: var(--btnPrim);
+    color: var(--corTexto);
+}
+
+button.btnPrim:hover{
+    background-color: var(--fundo);
+    color: var(--corTexto);
+    transition: all 1s;
+}
+
+button.btnSecun{
+    background-color: var(--btnSec);
+    color: var(--corTexto);
+}
+
+button.btnSecun:hover{
+    background-color: var(--fundo);
+    color: var(--corTexto);
+    transition: all 1s;
+}
+
+button.btnTer{
+    background-color: transparent;
+    color: var(--corTexto);
+}
+
+button.btnTer:hover{
+    background-color: transparent;
+    color: var(--corTexto);
+    transition: all 1s;
+}
+
+/*input**********************************************/
+input{
+    padding: 10px 16px;
+    border: 1px solid var(--corTexto);
+    border-radius: var(--oito01);
+    cursor: pointer;}
+
+input[type=email]{
+    width: 50%;
+    font-size: var(--tamTexto);
+}

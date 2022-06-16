@@ -1,0 +1,113 @@
+img.logo:hover{
+    display: inline-block;
+    animation: rola 0.3s infinite;
+}
+
+/*cabeçalho********************************************/
+header{
+    position: fixed;
+    width: 100vw; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+}
+
+header img{
+    width: 48px;
+}
+
+.dir,.esq{
+    padding: 4px 14%;
+    cursor: pointer;
+}
+
+.btnTer:hover{
+    animation: ladoLado 0.75s infinite;
+}
+
+.esq i{
+    padding: var(--oito01);
+}
+
+/*conteúdo********************************************/
+.intro{
+    background-image: url('../img/trio-primavera.jpg');
+    background-size: cover;
+}
+
+.inicio{
+    width: 100vw; height: 100vh;
+
+    background: rgba(236, 236, 236, 0.75);
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    border: 1px solid rgba( 255, 255, 255, 0.2);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.iniCont{
+    width: 35%;
+    margin:8vh 14%;
+}
+
+.iniCont img{
+    width: 300px;
+}
+
+/*rodapé********************************************/
+footer{
+    width: 100vw; 
+    font-size: var(--oito02);
+    background-color: var(--fundo);
+}
+
+footer img{
+    width: 40px;
+}
+
+footer p.cit{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.rdpSobre ul li{
+    display: inline;
+    padding: 0 24px 0 0;
+    font-size: var(--oito02);
+}
+
+.rdpCnt{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 2.5fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    ". sobre form nav .";
+    gap: var(--oito06);
+    align-items: center;
+    padding: var(--oito08);
+    border-top: 1px solid var(--fundo);
+}
+
+.rdpSobre{
+    grid-area: sobre;
+}
+
+.copy{
+    text-transform: uppercase;
+}
+
+.rdpNav{
+    grid-area: nav;
+}
+
+.rdpNav ul li{
+    padding: var(--oito01);
+}
+
+.rdpForm{
+    grid-area: form;
+}

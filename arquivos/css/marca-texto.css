@@ -1,0 +1,29 @@
+/*grupo h*/
+h1{
+    font-size: var(--oito02);
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+h2,h3,h4,h5,h6{
+    padding: 16px 0;
+    font-weight: 100;
+}
+
+/*marcação*/
+a{
+    color: var(--corTexto);
+}
+
+a:hover{
+    color: var(--corPrim);
+}
+
+img{
+    -webkit-filter: grayscale(30%);
+}
+
+/*texto*/
+p, small{
+    margin: 16px 0;
+}
