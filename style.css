@@ -51,24 +51,12 @@
   --corTexto:rgba(8, 8, 8, 0.6);
 
   --buttonPrim:rgba(194, 99, 10, 0.8);
-  --btnSec:rgba(255, 255, 255,0.25);
+  --buttonSec:rgba(255, 255, 255,0.25);
 
   --fundo:rgba(238, 238, 238,1);
 
   --fonteTexto: 'Inter', sans-serif;
   font-size: 62.5%;  /* 10px - fica melhor pra calcular com rem */
-
-  --tamTexto: 1.2rem;
-  --oito01:0.8rem;
-  --oito02:1.6rem;
-  --oito03:2.4rem;
-  --oito04:3.2rem;
-  --oito05:4rem;
-  --oito06:4.8rem;
-  --oito07:5.6rem;
-  --oito08:6.4rem;
-  --oito09:7.2rem;
-  --oito10:8rem;
 }
 
 ::selection {
@@ -101,5 +89,45 @@ html{
 body{
   font-family: var(--fonteTexto);
   font-size: 1.6rem;
+  color: var(--corTexto);
+}
+
+/* ---------- HOME ---------- */
+button{
+  font-size: 1.2rem;
+  padding: 1rem 1.6rem;
+  margin: 0 1.6rem 0 0;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0.8rem;
+}
+
+button i{
+  padding: 0 0.8rem 0 0;
+}
+
+button.btnPrim{
+  background-color: var(--buttonPrim);
+  color: var(--corTexto);
+
+  transition: 1s;
+}
+
+button.btnPrim:hover{
+  background-color: var(--fundo);
+  color: var(--corTexto);
+}
+
+button.btnSecun{
+  background-color: var(--buttonSec);
+  color: var(--corTexto);
+  
+  transition: 1s;
+}
+
+button.btnSecun:hover{
+  background-color: var(--fundo);
   color: var(--corTexto);
 }
