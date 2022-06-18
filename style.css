@@ -1,0 +1,105 @@
+/* ---------- seletor universal ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+/* ---------- ANIMACOES ---------- */
+@keyframes rola {
+  0% {
+      transform: rotate(0);
+  }
+  25% {
+      transform: rotate(90deg);
+  }
+  50% {
+      transform: rotate(180deg);
+  }
+  75% {
+      transform: rotate(270deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+@keyframes ladoLado {
+  0% {
+      transform: rotate(30deg);
+  }
+  25% {
+      transform: rotate(0);
+  }
+  50% {
+      transform: rotate(-30deg);
+  }
+  75% {
+      transform: rotate(0);
+  }
+  100% {
+      transform: rotate(30deg);
+  }
+}
+
+/* ---------- ROOT ---------- */
+:root {
+  --corPrim:rgba(194, 99, 10, 0.8);   
+  --corEsc:rgba(0, 0, 0,1);
+  --corClara:rgba(255, 255, 255,1);
+  --corTexto:rgba(8, 8, 8, 0.6);
+
+  --buttonPrim:rgba(194, 99, 10, 0.8);
+  --btnSec:rgba(255, 255, 255,0.25);
+
+  --fundo:rgba(238, 238, 238,1);
+
+  --fonteTexto: 'Inter', sans-serif;
+  font-size: 62.5%;  /* 10px - fica melhor pra calcular com rem */
+
+  --tamTexto: 1.2rem;
+  --oito01:0.8rem;
+  --oito02:1.6rem;
+  --oito03:2.4rem;
+  --oito04:3.2rem;
+  --oito05:4rem;
+  --oito06:4.8rem;
+  --oito07:5.6rem;
+  --oito08:6.4rem;
+  --oito09:7.2rem;
+  --oito10:8rem;
+}
+
+::selection {
+  background-color: var(--corTexto);
+  color: var(--corClara);
+}
+
+::-webkit-scrollbar {
+  width: 0.7rem;
+  /*height: 0;*/
+}
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-track {
+  border-radius: 0.8rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--fundo);
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: var(--fonteTexto);
+  font-size: 1.6rem;
+  color: var(--corTexto);
+}
